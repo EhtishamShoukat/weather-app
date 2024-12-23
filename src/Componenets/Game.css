@@ -1,0 +1,48 @@
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #f8f9fa; 
+    font-family: Arial, sans-serif;
+  }
+  
+  .Container {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .Square {
+    width: 100%;
+    aspect-ratio: 1; 
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ced4da; 
+    background-color: #ffffff;
+    cursor: pointer;
+  }
+  
+  .Square:disabled {
+    background-color: #e9ecef; 
+    cursor: not-allowed;
+  }
+  
+  .winner {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #198754; 
+  }
+  
